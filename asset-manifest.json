@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dice-roll-app-v2/static/css/main.17e6ed28.css",
+    "main.js": "/dice-roll-app-v2/static/js/main.c3c44cb0.js",
+    "static/js/787.0fff82a0.chunk.js": "/dice-roll-app-v2/static/js/787.0fff82a0.chunk.js",
+    "index.html": "/dice-roll-app-v2/index.html",
+    "main.17e6ed28.css.map": "/dice-roll-app-v2/static/css/main.17e6ed28.css.map",
+    "main.c3c44cb0.js.map": "/dice-roll-app-v2/static/js/main.c3c44cb0.js.map",
+    "787.0fff82a0.chunk.js.map": "/dice-roll-app-v2/static/js/787.0fff82a0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17e6ed28.css",
+    "static/js/main.c3c44cb0.js"
+  ]
+}
