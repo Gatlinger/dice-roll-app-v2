@@ -1,0 +1,9 @@
+.SumNameBlock {
+    display: grid;
+    justify-items: end;
+}
+
+.SumLogBlock {
+    display: grid;
+    justify-items: start;
+}

@@ -1,0 +1,9 @@
+.ResultLogBlock {
+    display: grid;
+    justify-items: start;
+}
+
+.ResultNameBlock {
+    display: grid;
+    justify-items: end;
+}
