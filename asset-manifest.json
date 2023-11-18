@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dice-roll-app-v2/static/css/main.2e757a00.css",
-    "main.js": "/dice-roll-app-v2/static/js/main.df95d2a8.js",
+    "main.css": "/dice-roll-app-v2/static/css/main.04dcabd8.css",
+    "main.js": "/dice-roll-app-v2/static/js/main.fb6e2408.js",
     "static/js/787.0fff82a0.chunk.js": "/dice-roll-app-v2/static/js/787.0fff82a0.chunk.js",
     "index.html": "/dice-roll-app-v2/index.html",
-    "main.2e757a00.css.map": "/dice-roll-app-v2/static/css/main.2e757a00.css.map",
-    "main.df95d2a8.js.map": "/dice-roll-app-v2/static/js/main.df95d2a8.js.map",
+    "main.04dcabd8.css.map": "/dice-roll-app-v2/static/css/main.04dcabd8.css.map",
+    "main.fb6e2408.js.map": "/dice-roll-app-v2/static/js/main.fb6e2408.js.map",
     "787.0fff82a0.chunk.js.map": "/dice-roll-app-v2/static/js/787.0fff82a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e757a00.css",
-    "static/js/main.df95d2a8.js"
+    "static/css/main.04dcabd8.css",
+    "static/js/main.fb6e2408.js"
   ]
 }
