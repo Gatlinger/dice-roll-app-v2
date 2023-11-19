@@ -5,12 +5,14 @@ import {ResultSumBlock} from "./ResultSumBlock/ResultSumBlock";
 
 function App() {
 
+
+
     return (
         <div className={'App'}>
             <InfoInputBlock/>
             <ResultSumBlock/>
             <div>
-                <button>888</button>
+                <button>010</button>
             </div>
         </div>
     )

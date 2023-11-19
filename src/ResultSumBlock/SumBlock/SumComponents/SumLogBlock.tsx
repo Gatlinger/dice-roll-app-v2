@@ -4,7 +4,7 @@ import c from './SumComponents.module.css'
 export const SumLogBlock = () => {
     return (
         <div className={c.SumLogBlock}>
-            54
+            {'SUM'}
         </div>
     )
 }
