@@ -5,17 +5,19 @@ export const ResultLogBlock = () => {
     return (
         <div className={c.ResultLogBlock}>
             <div>
-            ResultLogBlock
-            </div>            <div>
-            ResultLogBlock
-            </div>            <div>
-            ResultLogBlock
-            </div>            <div>
-            ResultLogBlock
-            </div>            <div>
-            ResultLogBlock
-            </div>            <div>
-            ResultLogBlock
+                D20 - 20 Удача
+            </div>
+            <div>
+                D12 - 12
+            </div>
+            <div>
+                D10 - 10
+            </div>
+            <div>
+                D8 - 8
+            </div>
+            <div>
+                D4 - 4
             </div>
         </div>
     )

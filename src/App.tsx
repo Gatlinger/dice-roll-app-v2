@@ -9,6 +9,9 @@ function App() {
         <div className={'App'}>
             <InfoInputBlock/>
             <ResultSumBlock/>
+            <div>
+                <button>888</button>
+            </div>
         </div>
     )
 }

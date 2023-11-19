@@ -1,0 +1,32 @@
+.One {
+    width: 40px;
+    height: 40px;
+}
+
+.One:active {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+}
+
+.CountButton {
+    width: 76px;
+    height: 40px;
+}
+
+.CountButton:active {
+    width: 76px;
+    height: 40px;
+    background-color: yellow;
+}
+
+.RollButton {
+    height: 40px;
+    width: 210px;
+}
+
+.RollButton:active {
+    height: 40px;
+    width: 210px;
+    background-color: yellow;
+}

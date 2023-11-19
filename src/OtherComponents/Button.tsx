@@ -1,4 +1,5 @@
 import React from "react";
+import c from './OtherComponents.module.css'
 
 type ButtonPropsType = {
     name: string;
@@ -8,6 +9,6 @@ type ButtonPropsType = {
 
 export const Button = (props: ButtonPropsType) => {
     return (
-        <button className={props.className} onClick={props.onClickButtonHandler}>{props.name}</button>
+        <button className={c[props.className]} onClick={props.onClickButtonHandler}>{props.name}</button>
     )
 }
