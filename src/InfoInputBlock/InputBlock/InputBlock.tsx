@@ -2,11 +2,13 @@ import React, {useState} from "react";
 import c from './InputBlock.module.css'
 import {Button} from "../../OtherComponents/Button";
 import { Input } from "../../OtherComponents/Input";
+import {DiceDataType} from "../../App";
 
 type InputBlockPropsType = {
-    rollManyD20: () => void
+    rollManyDices: () => void
     d20Value: number
     setD20Value: (value:number) => void
+    DiceData: DiceDataType
 }
 
 export const InputBlock = (props:InputBlockPropsType) => {
@@ -19,7 +21,7 @@ export const InputBlock = (props:InputBlockPropsType) => {
         props.setD20Value(props.d20Value - 1)
         }
     }
-
+    console.log(props.DiceData)
     return (
         <div>
             <div className={c.text}>
@@ -35,7 +37,7 @@ export const InputBlock = (props:InputBlockPropsType) => {
                 </span>
             </div>
             <div>
-                <Button name={'ROLL'} className={'RollButton'} onClickButtonHandler={props.rollManyD20}/>
+                <Button name={'ROLL'} className={'RollButton'} onClickButtonHandler={props.rollManyDices}/>
             </div>
         </div>
     )
