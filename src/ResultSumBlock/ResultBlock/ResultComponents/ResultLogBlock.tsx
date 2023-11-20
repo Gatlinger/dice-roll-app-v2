@@ -1,27 +1,16 @@
 import React from "react";
 import c from './ResultComponents.module.css'
 
-export const ResultLogBlock = () => {
+type ResultLogBlockPropsType = {
+    d20Array: Array<number>
+}
+
+export const ResultLogBlock = (props:ResultLogBlockPropsType) => {
     return (
         <div className={c.ResultLogBlock}>
             <div>
-                111
+                {props.d20Array.map(n=> <div>D20 - {n}</div> )}
             </div>
-            {/*<div>*/}
-            {/*    D20 - 20 Удача*/}
-            {/*</div>*/}
-            {/*<div>*/}
-            {/*    D12 - 12*/}
-            {/*</div>*/}
-            {/*<div>*/}
-            {/*    D10 - 10*/}
-            {/*</div>*/}
-            {/*<div>*/}
-            {/*    D8 - 8*/}
-            {/*</div>*/}
-            {/*<div>*/}
-            {/*    D4 - 4*/}
-            {/*</div>*/}
         </div>
     )
 }

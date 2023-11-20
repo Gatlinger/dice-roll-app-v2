@@ -3,14 +3,20 @@ import c from './InputBlock.module.css'
 import {Button} from "../../OtherComponents/Button";
 import { Input } from "../../OtherComponents/Input";
 
-export const InputBlock = () => {
+type InputBlockPropsType = {
+    rollManyD20: () => void
+    d20Value: number
+    setD20Value: (value:number) => void
+}
 
-    let [d20Value, setD20Value] = useState(0)
+export const InputBlock = (props:InputBlockPropsType) => {
 
-    const incrementFunction = () => {setD20Value(d20Value + 1)}
+
+
+    const incrementFunction = () => {props.setD20Value(props.d20Value + 1)}
     const decrementFunction = () => {
-        if (d20Value > 0) {
-        setD20Value(d20Value - 1)
+        if (props.d20Value > 0) {
+        props.setD20Value(props.d20Value - 1)
         }
     }
 
@@ -21,69 +27,15 @@ export const InputBlock = () => {
             </div>
             <div className={c.test}>
                 <span>
-                    <Input className={'inputClass'} value={d20Value} onChange={()=>{}}/>
+                    <Input className={'inputClass'} value={props.d20Value} onChange={()=>{}}/>
                 </span>
                 <span>
                     <Button name={'+1'} onClickButtonHandler={incrementFunction} className={'CountButton'}/>
                     <Button name={'-1'} onClickButtonHandler={decrementFunction} className={'CountButton'}/>
                 </span>
             </div>
-            {/*<div className={c.test}>*/}
-            {/*    <span>*/}
-            {/*        <input type={'number'}  className={c.inputClass}/>*/}
-            {/*    </span>*/}
-            {/*    <span>*/}
-            {/*        <Button name={'+1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*        <Button name={'-1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*    </span>*/}
-            {/*</div>*/}
-            {/*<div className={c.test}>*/}
-            {/*    <span>*/}
-            {/*        <input type={'number'}  className={c.inputClass}/>*/}
-            {/*    </span>*/}
-            {/*    <span>*/}
-            {/*        <Button name={'+1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*        <Button name={'-1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*    </span>*/}
-            {/*</div>*/}
-            {/*<div className={c.test}>*/}
-            {/*    <span>*/}
-            {/*        <input type={'number'}  className={c.inputClass}/>*/}
-            {/*    </span>*/}
-            {/*    <span>*/}
-            {/*        <Button name={'+1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*        <Button name={'-1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*    </span>*/}
-            {/*</div>*/}
-            {/*<div className={c.test}>*/}
-            {/*    <span>*/}
-            {/*        <input type={'number'}  className={c.inputClass}/>*/}
-            {/*    </span>*/}
-            {/*    <span>*/}
-            {/*        <Button name={'+1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*        <Button name={'-1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*    </span>*/}
-            {/*</div>*/}
-            {/*<div className={c.test}>*/}
-            {/*    <span>*/}
-            {/*        <input type={'number'}  className={c.inputClass}/>*/}
-            {/*    </span>*/}
-            {/*    <span>*/}
-            {/*        <Button name={'+1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*        <Button name={'-1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*    </span>*/}
-            {/*</div>*/}
-            {/*<div className={c.test}>*/}
-            {/*    <span>*/}
-            {/*        <input type={'number'}  className={c.inputClass}/>*/}
-            {/*    </span>*/}
-            {/*    <span>*/}
-            {/*        <Button name={'+1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*        <Button name={'-1'} onClickButtonHandler={()=>{}} className={'CountButton'}/>*/}
-            {/*    </span>*/}
-            {/*</div>*/}
             <div>
-                <Button name={'ROLL'} className={'RollButton'} onClickButtonHandler={()=>{}}/>
+                <Button name={'ROLL'} className={'RollButton'} onClickButtonHandler={props.rollManyD20}/>
             </div>
         </div>
     )
