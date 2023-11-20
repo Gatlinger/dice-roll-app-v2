@@ -1,10 +1,14 @@
 import React from "react";
 import c from './SumComponents.module.css'
 
-export const SumLogBlock = () => {
+type SumLogBlockPropsType = {
+    SUM: number
+}
+
+export const SumLogBlock = (props:SumLogBlockPropsType) => {
     return (
         <div className={c.SumLogBlock}>
-            {'SUM'}
+            {props.SUM}
         </div>
     )
 }

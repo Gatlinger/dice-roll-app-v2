@@ -3,11 +3,15 @@ import c from './SumBlock.module.css'
 import {SumNameBlock} from "./SumComponents/SumNameBlock";
 import {SumLogBlock} from "./SumComponents/SumLogBlock";
 
-export const SumBlock = () => {
+type SumBlockPropsType = {
+    SUM: number
+}
+
+export const SumBlock = (props:SumBlockPropsType) => {
     return (
         <div className={c.SumBlock}>
             <SumNameBlock/>
-            <SumLogBlock/>
+            <SumLogBlock SUM={props.SUM}/>
         </div>
     )
 }
