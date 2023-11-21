@@ -1,10 +1,10 @@
 import React from "react";
 import c from './ResultComponents.module.css'
-import {DicesType} from "../../../App";
+import {NewDiceType} from "../../../App";
 
 type ResultLogBlockPropsType = {
     d20Array: Array<number>
-    otherDicesArray: DicesType[]
+    otherDicesArray: NewDiceType[]
 }
 
 export const ResultLogBlock = (props:ResultLogBlockPropsType) => {

@@ -2,11 +2,11 @@ import React from "react";
 import c from './ResultBlock.module.css'
 import {ResultNameBlock} from "./ResultComponents/ResultNameBlock";
 import {ResultLogBlock} from "./ResultComponents/ResultLogBlock";
-import {DicesType} from "../../App";
+import {NewDiceType} from "../../App";
 
 type ResultBlockPropsType = {
     d20Array: Array<number>
-    otherDicesArray: DicesType[]
+    otherDicesArray: NewDiceType[]
 }
 
 export const ResultBlock = (props:ResultBlockPropsType) => {
